@@ -1,0 +1,53 @@
+{
+  "entries": [
+    {
+      "content": "Today I learned about css and flexbox.",
+      "date": "2019-09-15",
+      "concepts": "css and flexbox.",
+      "mood": "happy",
+      "id": "1"
+    },
+    {
+      "content": "helloooooo",
+      "date": "2019-09-11",
+      "concepts": "MO LEARNED SOMETHING",
+      "mood": "happy",
+      "id": "2"
+    },
+    {
+      "content": "work?",
+      "date": "2019-09-17",
+      "concepts": "does this work",
+      "mood": "happy",
+      "id": "3"
+    },
+    {
+      "content": "yes!",
+      "date": "2019-09-17",
+      "concepts": "delete",
+      "mood": "happy",
+      "id": "4"
+    },
+    {
+      "content": "yes",
+      "date": "2019-09-26",
+      "concepts": "something to delete",
+      "mood": "indifferent",
+      "id": "5"
+    },
+    {
+      "content": "react",
+      "date": "09-04-2019",
+      "concepts": "react",
+      "mood": "happy",
+      "id": "6"
+    },
+    {
+      "content": "lauren",
+      "date": "lauren",
+      "concepts": "lauren",
+      "mood": "lauren",
+      "id": "7"
+    }
+  ]
+}
