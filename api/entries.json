@@ -1,53 +1,52 @@
 {
   "entries": [
     {
+      "id": "1",
+      "title": "what i learned",
       "content": "Today I learned about css and flexbox.",
       "date": "2019-09-15",
-      "concepts": "css and flexbox.",
-      "mood": "happy",
-      "id": "1"
+      "concepts": "css and flexbox.....",
+      "mood": "happy"
     },
     {
+      "id": "2",
+      "title": "Mo",
       "content": "helloooooo",
       "date": "2019-09-11",
-      "concepts": "MO LEARNED SOMETHING",
-      "mood": "happy",
-      "id": "2"
+      "concepts": "mo learned something",
+      "mood": "happy"
     },
     {
-      "content": "work?",
+      "id": "3",
+      "title": "test",
+      "content": "work",
       "date": "2019-09-17",
       "concepts": "does this work",
-      "mood": "happy",
-      "id": "3"
+      "mood": "happy"
     },
     {
+      "id": "4",
+      "title": "happy it worked!",
       "content": "yes!",
       "date": "2019-09-17",
       "concepts": "delete",
-      "mood": "happy",
-      "id": "4"
+      "mood": "happy"
     },
     {
+      "id": "5",
+      "title": "more testing",
       "content": "yes",
       "date": "2019-09-26",
       "concepts": "something to delete",
-      "mood": "indifferent",
-      "id": "5"
+      "mood": "indifferent"
     },
     {
-      "content": "react",
-      "date": "09-04-2019",
+      "title": "test",
+      "content": "react test",
+      "date": "2019-10-06",
       "concepts": "react",
-      "mood": "happy",
-      "id": "6"
-    },
-    {
-      "content": "lauren",
-      "date": "lauren",
-      "concepts": "lauren",
-      "mood": "lauren",
-      "id": "7"
+      "mood": "annoyed",
+      "id": "8Q-yeVE"
     }
   ]
 }

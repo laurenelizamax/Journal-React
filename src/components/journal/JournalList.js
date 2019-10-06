@@ -35,7 +35,7 @@ import React, { Component } from 'react'
             <>
             <section className="section-content">
   <button type="button"
-      className="btn"
+      className="addBtn"
       onClick={() => {this.props.history.push("/entries/new")}}>
       Add New Entry
   </button>

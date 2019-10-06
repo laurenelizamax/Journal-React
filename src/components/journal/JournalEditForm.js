@@ -5,7 +5,8 @@ import "./JournalForm.css"
 class JournalEditForm extends Component {
     //set the initial state
     state = {
-       content: "",
+        title: "",
+        content: "",
         date: "",
         concepts: "",
         mood: "",
@@ -23,6 +24,7 @@ class JournalEditForm extends Component {
         this.setState({ loadingStatus: true });
         const editedEntry = {
             id: this.props.match.params.entryId,
+            title: this.state.title,
             content: this.state.content,
             date: this.state.date,
             concepts: this.state.concepts,
@@ -37,6 +39,7 @@ class JournalEditForm extends Component {
         JournalManager.get(this.props.match.params.entryId)
             .then(entry=> {
                 this.setState({
+                    title: entry.title,
                     content: entry.content,
                     date: entry.date,
                     concepts: entry.concepts,
@@ -47,26 +50,36 @@ class JournalEditForm extends Component {
     }
 
     render() {
-
         return (
             <>
                 <form>
                     <fieldset>
                         <div className="formgrid">
+                        <label htmlFor="title">Title</label>
+                            <input
+                                type="text"
+                                required
+                                onChange={this.handleFieldChange}
+                                id="title"
+                                placeholder="title"
+                                value={this.state.title}
+                            />
                             <label htmlFor="content">Content</label>
                             <input
                                 type="text"
                                 required
                                 onChange={this.handleFieldChange}
                                 id="content"
-                                placeholder="Content"
+                                placeholder="content"
+                                value={this.state.content}
                             />
                             <label htmlFor="date">Date</label>
                             <input
-                                type="text"
+                                type="date"
                                 required
                                 onChange={this.handleFieldChange}
                                 id="date"
+                                value={this.state.date}
                                 placeholder="Date"
                             />
                             <label htmlFor="concepts">Concpets Covered</label>
@@ -75,6 +88,7 @@ class JournalEditForm extends Component {
                                 required
                                 onChange={this.handleFieldChange}
                                 id="concepts"
+                                value={this.state.concepts}
                                 placeholder="Concepts"
                             />
                             <label htmlFor="mood">Mood</label>
@@ -83,6 +97,7 @@ class JournalEditForm extends Component {
                                 required
                                 onChange={this.handleFieldChange}
                                 id="mood"
+                                value={this.state.mood}
                                 placeholder="Mood"
                             />
                         </div>
@@ -90,7 +105,7 @@ class JournalEditForm extends Component {
                             <button
                                 type="button"
                                 disabled={this.state.loadingStatus}
-                                onClick={this.constructNewEntry}
+                                onClick={this.updateExistingEntry}
                             >Save Entry</button>
                         </div>
                     </fieldset>

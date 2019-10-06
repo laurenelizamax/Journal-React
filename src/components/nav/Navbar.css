@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
 small {
   font-size: 75%;
 }
 
 header {
-  background-color:darkblue;
-  border: cornflowerblue solid 3px;
+  background-image: Url("../../Images/home.jpg");
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+  background-size: cover; 
+  /* border: #013059 solid 3px; */
+  font-family: 'Indie Flower', cursive;
 }
 
 .site-title {
-  color: ghostwhite;
+  color: white;
   text-align: center;
 }
 
@@ -16,30 +23,39 @@ nav .container {
   display: flex;
   padding: 0;
   margin-bottom: 0;
+  font-family: 'Indie Flower', cursive;
 }
 
 nav .container li {
   flex: 1;
-  padding: 10px;
+  padding: 15px;
+  margin-top: 60px;
   text-align: center;
-  font-size: 1.5em;
-  color: cornsilk;
+  font-size: 1.7em;
+  color: #013059;
   box-sizing: border-box;
-  background-color: cornflowerblue;
+  background-color: white;
+  opacity: 0.8;
   list-style-type: none;
+  font-family: 'Indie Flower', cursive;
 }
 
 nav .container a {
-  color: cornsilk;
+  color: #013059;
 }
 
 nav .container a:hover {
-  color: maroon;
+  color:#578FA5;
 }
 nav span {
   cursor: pointer;
   text-decoration: underline;
+  font-family: 'Indie Flower', cursive;
+
 }
 nav span:hover {
-color: maroon;
+color: #578FA5;
+}
+h1 {
+  font-size:  40px;
 }
