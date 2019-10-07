@@ -9,7 +9,7 @@
   flex: 0 1 24%;
   background-color: #D7D7D9;
   font-family: 'Indie Flower', cursive;
-  color: white;
+  color: black;
 }
 
 .card-content {
@@ -20,12 +20,12 @@
   margin-top: 0;
   margin-bottom: .5em;
   font-weight: bold;
-  color:white;
+  color:black;
 }
 
 .card-content p {
   font-size: 80%;
-  color: white;
+  color: black;
 }
 
 .content-entryname {
@@ -48,8 +48,8 @@
 }
 
 .card button:hover {
-  background-color: #015059;
+  background-color: #730202
 }
 .btn {
-  background-color: #03658C;
+  background-color: #730202
 }

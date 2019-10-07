@@ -1,69 +1,74 @@
 fieldset {
-    max-width: 40em;
-    padding: 4px;
-    margin: 2em auto;
-    border: 0 none;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
-    background: aliceblue;
+  max-width: 40em;
+  padding: 4px;
+  margin: 2em auto;
+  border: 0 none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: aliceblue;
 }
 
-fieldset input, fieldset button{
-    box-sizing: border-box;
-    padding: .2em .4em;
-    margin: .2em 0;
-    outline: none;
-    box-shadow: none;
+fieldset input,
+fieldset button {
+  box-sizing: border-box;
+  padding: 0.2em 0.4em;
+  margin: 0.2em 0;
+  outline: none;
+  box-shadow: none;
 }
 
 fieldset button {
-    max-width: 9em;
-    padding: .5em;
-    margin: .3em auto;
-    background-color: cornflowerblue;
-    border: none;
-    color: cornsilk;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 2px;
-    width: 100%;
-    cursor: pointer;
+  max-width: 9em;
+  padding: 0.5em;
+  margin: 0.3em auto;
+  background-color: cornflowerblue;
+  border: none;
+  color: cornsilk;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 2px;
+  width: 100%;
+  cursor: pointer;
 }
 
 fieldset label {
-    box-sizing: border-box;
-    user-select: none;
-    cursor: pointer;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: pointer;
 }
 fieldset input:focus + label {
-    color: #933;
+  color: #933;
 }
 
 fieldset .formgrid {
-    display: grid;
-    grid-template-columns: 1fr 1em 2fr;
-    grid-gap: .3em .6em;
-    grid-auto-flow: dense;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1em 2fr;
+  grid-gap: 0.3em 0.6em;
+  grid-auto-flow: dense;
+  align-items: center;
 }
 
-fieldset input, fieldset button {
-    grid-column: 2 /4;
-    width: auto;
-    margin: 0
+fieldset input,
+fieldset button {
+  grid-column: 2 /4;
+  width: auto;
+  margin: 0;
 }
 
 fieldset .alignRight {
-    text-align: right;
+  text-align: right;
 }
 .addBtn {
-    font-family: 'Indie Flower', cursive;
-    height: 40px;
-    width: 120px;
-    border: none;
-    background-color: #03658C;
-    color: white;
-    font-size: 14px;
+  font-family: "Indie Flower", cursive;
+  height: 40px;
+  width: 120px;
+  border: none;
+  background-color: #03658c;
+  color: white;
+  font-size: 14px;
+}
+.addBtn:hover {
+  background-color: #730202;
 }

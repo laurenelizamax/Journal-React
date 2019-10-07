@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import JournalManager from '../../modules/JournalManager'
 import { firstLetterCase } from '../../modules/helpers'
+import './JournalDetail.css'
+
 
 class JournalDetail extends Component {
 
@@ -36,8 +38,8 @@ class JournalDetail extends Component {
 
     render() {
         return (
-            <div className="card">
-                <div className="card-content">
+            <div className="cardDet">
+                <div className="cardContentDet">
                     <picture>
                         {/* <img src={require('./dog.svg')} alt="My Dog" /> */}
                     </picture>
@@ -46,7 +48,9 @@ class JournalDetail extends Component {
                     <p>Date: {firstLetterCase(this.state.date)}</p>
                     <p>Concepts: {firstLetterCase(this.state.concepts)}</p>
                     <p>Mood: {firstLetterCase(this.state.mood)}</p>
-                    <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Discharge</button>
+                    <button className="detailsBtn" type="button"
+                        onClick={() => { this.props.history.push(`/entries/${this.props.entryId}/edit`) }}>Edit Entry</button>
+                    <button className="detailsBtn" type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Delete Entry</button>
                 </div>
             </div>
         );

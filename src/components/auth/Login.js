@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import "./Login.css"
 
 class Login extends Component {
 
@@ -26,7 +27,7 @@ class Login extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleLogin}>
+      <form onSubmit={this.handleLogin}className="loginForm">
         <fieldset>
             <h3>Please sign in</h3>
             <div className="formgrid">
@@ -42,7 +43,7 @@ class Login extends Component {
                     required="" />
                 <label htmlFor="inputPassword">Password</label>
             </div>
-            <button type="submit">
+            <button className="loginBtn" type="submit">
                 Sign in
             </button>
         </fieldset>
